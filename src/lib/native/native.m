@@ -1,6 +1,6 @@
 
-lib__display__DisplaySize *get_main_display_size(void) {
-    lib__display__DisplaySize *display_size = malloc(sizeof(lib__display__DisplaySize));
+src__lib__native__DisplaySize *get_main_display_size(void) {
+    src__lib__native__DisplaySize *display_size = malloc(sizeof(src__lib__native__DisplaySize));
     CGDirectDisplayID d_id = CGMainDisplayID();
     display_size->pixel_width = CGDisplayPixelsWide(d_id);
     display_size->pixel_height = CGDisplayPixelsHigh(d_id);
